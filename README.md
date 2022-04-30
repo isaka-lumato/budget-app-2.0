@@ -3,9 +3,10 @@
 This project is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
 ## Live Demo
-https://blog-app-tz.herokuapp.com/
+https://budgetapp11.herokuapp.com/
 
 ## Presentation
+https://www.loom.com/share/960633d078804eadb6c1f633ff8a2ffa
 
 ## Built With
 
