@@ -1,0 +1,12 @@
+<div class="nav-container display-flex justify-content-space-between">
+  <p class="nav-icon color-white cursor-pointer">&#9776;</p>
+  <a href="/">
+  <%= image_tag ("budget.png"), class: 'logo' %>
+  </a>
+  <% if user_signed_in? %>
+    <%= button_to "Sign Out", destroy_user_session_path, method: :delete, data: {turbo: false}, class: 'sign-out-button color-white border-none cursor-pointer' %>
+  <% else %>
+    <i class="fas fa-search color-white search-icon cursor-pointer"></i>
+    <% end %>
+  
+</div>

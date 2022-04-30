@@ -1,0 +1,12 @@
+<div class="text-align-center">
+  <h1>Welcome To Budget App</h1>
+  <% if user_signed_in? %>
+    <%= button_to "Sign Out", destroy_user_session_path, method: :delete, data: {turbo: false} %>
+  <% else %>
+    <ul>
+      <li class="list-style-none splash-screen-links"><a class="text-decoration-none" href="/users/sign_in">Sign In</li>
+      <li class="list-style-none splash-screen-links"><a class="text-decoration-none" href="/users/sign_up">Sign Up</li>
+    </ul>
+  <% end %>
+
+</div>

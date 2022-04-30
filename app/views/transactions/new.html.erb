@@ -1,0 +1,22 @@
+<div class="padding-12-px">
+<h1>New Transaction</h1>
+<%= form_with(model: @transaction, url: category_transactions_path, method: :post, local: true) do |form| %>
+
+    <div>
+      <%= form.label :name, :class => "form-label" %>
+      <br>
+      <%= form.text_field :name, placeholder: "Transaction Name", required: true, :class => "border-none form-input width-100-percent" %>
+    </div>
+
+    <div class="mb-3 p-2">
+      <%= form.label :amount, :class => "form-label" %>
+      <br>
+      <%= form.number_field :amount, placeholder: "Amount", required: true, :class => "border-none form-input width-100-percent" %>
+    </div>
+    <div class="padding-15-px">
+    <div class="create-new-button-container text-align-center">
+      <%= form.submit "Save", class: "cursor-pointer border-none color-white", disable_with: "Please wait..." %>
+    </div>
+    </div>
+<% end %>
+</div>

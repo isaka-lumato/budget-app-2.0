@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BudgetApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <script src="https://kit.fontawesome.com/89c0957ca7.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+      <%= render 'partials/nav' %>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <% if !user_signed_in? %>
+    
+     
+    <% else %>
+   
+    <% end %>
+
+
+
+
+     <%= yield %>
+  </body>
+</html>
