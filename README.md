@@ -6,7 +6,6 @@ This project is about building a mobile web application where you can manage you
 https://blog-app-tz.herokuapp.com/
 
 ## Presentation
-https://www.loom.com/share/58210db4072f4370bcf446f9cf6957e7
 
 ## Built With
 
